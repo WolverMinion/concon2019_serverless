@@ -58,7 +58,7 @@ public class ThumbnailGenerator implements RequestHandler<S3Event, String> {
     // TODO check TARGET_BUCKET_NAME name
 
     // AWS S3 bucket
-    private final static String TARGET_BUCKET_NAME = "ok-ws-images";
+    private final static String TARGET_BUCKET_NAME = "ok-ws-images-wm";
 
     // AWS S3 "folder" for generated thumbnails
     private final static String TARGET_KEY_PREFIX = "thumbnails/";
@@ -145,8 +145,11 @@ public class ThumbnailGenerator implements RequestHandler<S3Event, String> {
             //
             // HINT GetObjectRequest offers a builder you should make usage of.
 
-            GetObjectRequest getObjectRequest = null;
-
+            GetObjectRequest getObjectRequest = GetObjectRequest
+                    .builder()
+                    .bucket(bucketName)
+                    .key(keyName)
+                    .build();
 
             // create in memory image file
             String tmpName = UUID.randomUUID().toString();
@@ -162,7 +165,6 @@ public class ThumbnailGenerator implements RequestHandler<S3Event, String> {
 
             FileUtils.copyInputStreamToFile(s3ObjectInputStream, inMemoryFile);
 
-
             // STEP 2: resize image via image processor
 
             // call image processor to resize image
@@ -170,7 +172,7 @@ public class ThumbnailGenerator implements RequestHandler<S3Event, String> {
             String requestedImageProcessor = getEnvVarAsString(IMAGE_PROCESSOR, ImageProcessorFactory.DEFAULT_IMAGE_PROCESSOR);
             ImageProcessor imageProcessor = ImageProcessorFactory.createImageProcessor(requestedImageProcessor);
 
-            File convertedFile = imageProcessor.resizeImage(inMemoryFile, 100, 100);
+            File convertedFile = imageProcessor.resizeImage(inMemoryFile, 50, 50);
             long convertedFileLength = convertedFile.length();
 
             // STEP 3: save resized image to target bucket
@@ -186,7 +188,14 @@ public class ThumbnailGenerator implements RequestHandler<S3Event, String> {
             //
             // HINT GetObjectRequest offers a builder you should make usage of.
 
-            PutObjectRequest putObjectRequest = null;
+            PutObjectRequest putObjectRequest = PutObjectRequest
+                    .builder()
+                    .bucket(TARGET_BUCKET_NAME)
+                    .key(thumbnailName)
+                    .acl(ObjectCannedACL.PUBLIC_READ)
+                    .contentType(objectType)
+                    .contentLength(convertedFileLength)
+                    .build();
 
             // TODO put object to S3 with the help of S3_CLIENT and the created PutObjectRequest object
             //
@@ -194,7 +203,10 @@ public class ThumbnailGenerator implements RequestHandler<S3Event, String> {
             //       file (convertedFile) to a RequestBody object.
 
             // put object to S3
-            PutObjectResponse putObjectResponse = null;
+            PutObjectResponse putObjectResponse = S3_CLIENT.putObject(
+                    putObjectRequest,
+                    RequestBody.fromFile(convertedFile)
+            );
 
         } catch (IOException ex) {
             // he, what could go wrong? ;-)
@@ -215,7 +227,7 @@ public class ThumbnailGenerator implements RequestHandler<S3Event, String> {
         // returns "myName"
         String[] parts = keyName.split("/");
         String fileName = parts[parts.length-1];
-        return fileName.substring(0, fileName.indexOf('.'));
+        return fileName.substring(0, fileName.lastIndexOf('.'));
     }
 
     /**
@@ -230,7 +242,7 @@ public class ThumbnailGenerator implements RequestHandler<S3Event, String> {
         // returns "jpg"
         String[] parts = keyName.split("/");
         String fileName = parts[parts.length-1];
-        String imageType = fileName.substring(fileName.indexOf('.')+1);
+        String imageType = fileName.substring(fileName.lastIndexOf('.')+1);
         return imageType;
     }
 

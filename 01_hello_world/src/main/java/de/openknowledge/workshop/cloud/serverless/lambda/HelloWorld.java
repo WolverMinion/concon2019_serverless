@@ -46,6 +46,7 @@ public class HelloWorld {
         logger.log(firstName);
         logger.log(lastName);
         logger.log(response);
+        logger.log(System.getenv().toString());
 
         return new HelloWorldResponse(response);
     }
