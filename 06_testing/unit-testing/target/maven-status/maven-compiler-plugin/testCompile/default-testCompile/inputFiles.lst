@@ -1,5 +1,0 @@
-/Users/niclas/Developement/git/concon2019_serverless/06_testing/unit-testing/src/test/java/de/openknowledge/workshop/cloud/serverless/FakeContext.java
-/Users/niclas/Developement/git/concon2019_serverless/06_testing/unit-testing/src/test/java/de/openknowledge/workshop/cloud/serverless/lambda/GreetingHandlerTest.java
-/Users/niclas/Developement/git/concon2019_serverless/06_testing/unit-testing/src/test/java/de/openknowledge/workshop/cloud/serverless/FakeLambdaLogger.java
-/Users/niclas/Developement/git/concon2019_serverless/06_testing/unit-testing/src/test/java/de/openknowledge/workshop/cloud/serverless/lambda/GreetingHandlerTestMock.java
-/Users/niclas/Developement/git/concon2019_serverless/06_testing/unit-testing/src/test/java/de/openknowledge/workshop/cloud/serverless/service/GreetingServiceTest.java

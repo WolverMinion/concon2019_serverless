@@ -1,6 +1,0 @@
-de/openknowledge/workshop/cloud/serverless/business/ImageProcessor.class
-de/openknowledge/workshop/cloud/serverless/lambda/ThumbnailGenerator.class
-de/openknowledge/workshop/cloud/serverless/business/ImageProcessorFactory.class
-de/openknowledge/workshop/cloud/serverless/business/DefaultImageProcessor.class
-de/openknowledge/workshop/cloud/serverless/util/LambdaEnvironment.class
-de/openknowledge/workshop/cloud/serverless/business/CloudinaryImageProcessor.class
