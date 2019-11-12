@@ -192,7 +192,7 @@ public class ThumbnailGenerator implements RequestHandler<S3Event, String> {
                     .builder()
                     .bucket(TARGET_BUCKET_NAME)
                     .key(thumbnailName)
-                    .acl(ObjectCannedACL.PUBLIC_READ)
+                    .acl(ObjectCannedACL.BUCKET_OWNER_READ)
                     .contentType(objectType)
                     .contentLength(convertedFileLength)
                     .build();
