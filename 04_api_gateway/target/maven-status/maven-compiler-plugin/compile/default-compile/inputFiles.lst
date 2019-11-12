@@ -1,0 +1,17 @@
+/Users/niclas/Developement/git/concon2019_serverless/04_api_gateway/src/main/java/de/openknowledge/workshop/cloud/serverless/lambda/ReadImageInfo.java
+/Users/niclas/Developement/git/concon2019_serverless/04_api_gateway/src/main/java/de/openknowledge/workshop/cloud/client/ImageInfoTableClientBase.java
+/Users/niclas/Developement/git/concon2019_serverless/04_api_gateway/src/main/java/de/openknowledge/workshop/cloud/serverless/model/CreateImageInfoRequest.java
+/Users/niclas/Developement/git/concon2019_serverless/04_api_gateway/src/main/java/de/openknowledge/workshop/cloud/serverless/lambda/DeleteImageInfo.java
+/Users/niclas/Developement/git/concon2019_serverless/04_api_gateway/src/main/java/de/openknowledge/workshop/cloud/serverless/util/LambdaEnvironment.java
+/Users/niclas/Developement/git/concon2019_serverless/04_api_gateway/src/main/java/de/openknowledge/workshop/cloud/serverless/lambda/ListImageInfo.java
+/Users/niclas/Developement/git/concon2019_serverless/04_api_gateway/src/main/java/de/openknowledge/workshop/cloud/serverless/infrastructure/DynamoDBProvider.java
+/Users/niclas/Developement/git/concon2019_serverless/04_api_gateway/src/main/java/de/openknowledge/workshop/cloud/serverless/model/DeleteImageInfoRequest.java
+/Users/niclas/Developement/git/concon2019_serverless/04_api_gateway/src/main/java/de/openknowledge/workshop/cloud/serverless/model/ReadImageInfoRequest.java
+/Users/niclas/Developement/git/concon2019_serverless/04_api_gateway/src/main/java/de/openknowledge/workshop/cloud/serverless/lambda/CreateImageInfo.java
+/Users/niclas/Developement/git/concon2019_serverless/04_api_gateway/src/main/java/de/openknowledge/workshop/cloud/client/ImageInfoTableDeletionClient.java
+/Users/niclas/Developement/git/concon2019_serverless/04_api_gateway/src/main/java/de/openknowledge/workshop/cloud/serverless/model/ListImagesRequest.java
+/Users/niclas/Developement/git/concon2019_serverless/04_api_gateway/src/main/java/de/openknowledge/workshop/cloud/serverless/infrastructure/DynamoDBTableUtils.java
+/Users/niclas/Developement/git/concon2019_serverless/04_api_gateway/src/main/java/de/openknowledge/workshop/cloud/serverless/model/ImageInfo.java
+/Users/niclas/Developement/git/concon2019_serverless/04_api_gateway/src/main/java/de/openknowledge/workshop/cloud/client/ImageInfoTableCreatorClient.java
+/Users/niclas/Developement/git/concon2019_serverless/04_api_gateway/src/main/java/de/openknowledge/workshop/cloud/serverless/model/UpdateImageInfoRequest.java
+/Users/niclas/Developement/git/concon2019_serverless/04_api_gateway/src/main/java/de/openknowledge/workshop/cloud/serverless/lambda/UpdateImageInfo.java

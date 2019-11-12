@@ -1,0 +1,6 @@
+de/openknowledge/workshop/cloud/serverless/lambda/GreetingHandlerV2.class
+de/openknowledge/workshop/cloud/serverless/model/GreetingRequest.class
+de/openknowledge/workshop/cloud/serverless/model/ErrorResponse.class
+de/openknowledge/workshop/cloud/serverless/lambda/GreetingHandler.class
+de/openknowledge/workshop/cloud/serverless/model/GreetingResponse.class
+de/openknowledge/workshop/cloud/serverless/service/GreetingService.class

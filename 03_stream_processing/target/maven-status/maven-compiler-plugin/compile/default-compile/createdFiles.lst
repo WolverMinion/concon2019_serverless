@@ -1,0 +1,4 @@
+de/openknowledge/workshop/cloud/client/KinesisTestDataProducer.class
+de/openknowledge/workshop/cloud/serverless/lambda/AnomalyDetector.class
+de/openknowledge/workshop/cloud/serverless/util/LambdaEnvironment.class
+de/openknowledge/workshop/cloud/serverless/business/SensorDataValidator.class

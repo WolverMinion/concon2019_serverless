@@ -35,14 +35,19 @@ public class HelloWorld {
      * @param context Lambda function context object of type <code>Context</code>
      * @return Greeting string wrapped inside a response object of type <code>HelloWorldResponse</code>
      */
-    // TODO implement static method with name greet
-    //    1. see java doc for method signature
-    //    2. use GreetingService class and first name / last name from HelloWorldRequest parameter to generate greeting
-    //    3. return greeting with the help of HelloWorldResponse class
-    //    4. [OPTIONAL] log request parameters and generated greeting
+    public static HelloWorldResponse greet(HelloWorldRequest name, Context context) {
+        LambdaLogger logger = context.getLogger();
 
-    // HINT: take a look at the import statements, too.
+        String firstName = name.getFirstName();
+        String lastName = name.getLastName();
 
+        String response = GreetingService.greet(firstName, lastName);
 
+        logger.log(firstName);
+        logger.log(lastName);
+        logger.log(response);
+
+        return new HelloWorldResponse(response);
+    }
 }
 

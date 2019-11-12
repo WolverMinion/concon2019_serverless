@@ -1,0 +1,7 @@
+de/openknowledge/workshop/cloud/serverless/lambda/GreetingHandlerTest.class
+de/openknowledge/workshop/cloud/serverless/FakeLambdaLogger.class
+de/openknowledge/workshop/cloud/serverless/lambda/GreetingHandlerTestMock.class
+de/openknowledge/workshop/cloud/serverless/FakeContext.class
+de/openknowledge/workshop/cloud/serverless/service/GreetingServiceTest.class
+de/openknowledge/workshop/cloud/serverless/lambda/GreetingHandlerTest$2.class
+de/openknowledge/workshop/cloud/serverless/lambda/GreetingHandlerTest$1.class

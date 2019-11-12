@@ -1,0 +1,6 @@
+/Users/niclas/Developement/git/concon2019_serverless/02_file_processing/src/main/java/de/openknowledge/workshop/cloud/serverless/business/ImageProcessor.java
+/Users/niclas/Developement/git/concon2019_serverless/02_file_processing/src/main/java/de/openknowledge/workshop/cloud/serverless/lambda/ThumbnailGenerator.java
+/Users/niclas/Developement/git/concon2019_serverless/02_file_processing/src/main/java/de/openknowledge/workshop/cloud/serverless/util/LambdaEnvironment.java
+/Users/niclas/Developement/git/concon2019_serverless/02_file_processing/src/main/java/de/openknowledge/workshop/cloud/serverless/business/DefaultImageProcessor.java
+/Users/niclas/Developement/git/concon2019_serverless/02_file_processing/src/main/java/de/openknowledge/workshop/cloud/serverless/business/CloudinaryImageProcessor.java
+/Users/niclas/Developement/git/concon2019_serverless/02_file_processing/src/main/java/de/openknowledge/workshop/cloud/serverless/business/ImageProcessorFactory.java

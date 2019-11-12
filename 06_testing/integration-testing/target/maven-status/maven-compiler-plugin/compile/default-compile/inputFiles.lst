@@ -1,0 +1,6 @@
+/Users/niclas/Developement/git/concon2019_serverless/06_testing/integration-testing/src/main/java/de/openknowledge/workshop/cloud/serverless/model/GreetingResponse.java
+/Users/niclas/Developement/git/concon2019_serverless/06_testing/integration-testing/src/main/java/de/openknowledge/workshop/cloud/serverless/lambda/GreetingHandlerV2.java
+/Users/niclas/Developement/git/concon2019_serverless/06_testing/integration-testing/src/main/java/de/openknowledge/workshop/cloud/serverless/model/GreetingRequest.java
+/Users/niclas/Developement/git/concon2019_serverless/06_testing/integration-testing/src/main/java/de/openknowledge/workshop/cloud/serverless/service/GreetingService.java
+/Users/niclas/Developement/git/concon2019_serverless/06_testing/integration-testing/src/main/java/de/openknowledge/workshop/cloud/serverless/lambda/GreetingHandler.java
+/Users/niclas/Developement/git/concon2019_serverless/06_testing/integration-testing/src/main/java/de/openknowledge/workshop/cloud/serverless/model/ErrorResponse.java
